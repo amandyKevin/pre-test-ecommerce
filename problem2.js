@@ -1,6 +1,6 @@
 var limit = 4000000;
 
-var term = 1; sum = 0, terms = [term], ctr = 0, evenTerms = [];
+var term = 1; sum = 0, terms = [term], ctr = 0;
 
 while(term < limit){
 	var prevTerm = terms[ctr];
@@ -8,7 +8,6 @@ while(term < limit){
 	term = prevTerm + last2Term;
 	terms.push(term);
 	if(term < limit && term % 2 == 0){
-		evenTerms.push(term);
 		sum = sum + parseInt(term);
 	}
 	ctr++;
