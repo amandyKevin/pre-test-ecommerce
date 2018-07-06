@@ -23,4 +23,4 @@ for(product in belowLimit){
 	sum = ( sum + parseInt(product) );
 }
 
-console.log(belowLimit);
+console.log(sum);
